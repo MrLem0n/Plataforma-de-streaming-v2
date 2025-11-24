@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for peli in pelis %}
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{ peli.nombre }}</h5>
+        <p class="card-text">{{ peli.descripcion }}</p>
+        <a href="#" class="btn btn-primary">Ver</a>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
