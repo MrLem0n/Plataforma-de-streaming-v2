@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
-
+{% block navbar %}
+{% include "partials/navbar.html" %}
+{% endblock %}
 {% block content %}
 {% for serie in series %}
 <div class="card">
